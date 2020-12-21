@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "235199809856",
+    "project_id": "gamecompanionfusteradrian",
+    "storage_bucket": "gamecompanionfusteradrian.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235199809856:android:365acce07c59c10c73d2a5",
+        "android_client_info": {
+          "package_name": "com.adrianfuster.gamecompanion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235199809856-gobc5rudnehchou4g8vkrvnlig3pjq34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgAjoXX5MUOltXqtMkfphw5a1pyVzkiM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235199809856-gobc5rudnehchou4g8vkrvnlig3pjq34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

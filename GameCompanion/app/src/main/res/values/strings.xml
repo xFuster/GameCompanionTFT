@@ -9,6 +9,8 @@
     <string name="hintPassword">Password</string>
     <string name="btnLogin">Login</string>
     <string name="btnSignUp">Sign Up</string>
+    <string name="btnCreateAccount">Create Account</string>
+    <string name="hintUser">User</string>
 
 
 </resources>
