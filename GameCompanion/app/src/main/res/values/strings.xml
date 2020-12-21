@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GameCompanion</string>
+    <string name="tabChat">Chat</string>
+    <string name="tabUser">User</string>
+    <string name="tabComps">Comps</string>
+    <string name="tabPatch">Patch</string>
+    <string name="tabStreams">Streams</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintPassword">Password</string>
+    <string name="btnLogin">Login</string>
+    <string name="btnSignUp">Sign Up</string>
+
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/patchTab"
+        android:title="@string/tabPatch"
+        android:enabled="true"
+        android:icon="@drawable/ic_patch"
+        />
+    <item
+        android:id="@+id/compsTab"
+        android:title="@string/tabComps"
+        android:enabled="true"
+        android:icon="@drawable/ic_comps"
+        />
+    <item
+        android:id="@+id/chatTab"
+        android:title="@string/tabChat"
+        android:enabled="true"
+        android:icon="@drawable/ic_chat"
+        />
+    <item
+        android:id="@+id/streamsTab"
+        android:title="@string/tabStreams"
+        android:enabled="true"
+        android:icon="@drawable/ic_streams"
+        />
+    <item
+        android:id="@+id/userTab"
+        android:title="@string/tabUser"
+        android:enabled="true"
+        android:icon="@drawable/ic_user"
+        />
+</menu>
