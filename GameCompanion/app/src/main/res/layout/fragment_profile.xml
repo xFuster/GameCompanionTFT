@@ -13,47 +13,62 @@
         android:layout_height="200dp"
         app:srcCompat="@drawable/teamfight_tactics_logo" />
 
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
         android:id="@+id/edTxtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hintEmail"
-            android:inputType="textEmailAddress"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="250dp"
-            android:layout_marginEnd="100dp"
-            android:ems="10"
+        android:hint="@string/hintEmail"
+        android:inputType="textEmailAddress"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
             />
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edTxtPassword"
+    <TextView
+        android:id="@+id/txtVwEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edTxtEmail"
-        >
+        android:hint="@string/hintEmail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="100dp"
+        android:textSize="20dp"
+        android:ems="10"
+        />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hintPassword"
-            android:inputType="textPassword"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="100dp"
-            android:ems="10"
+
+    <EditText
+        android:id="@+id/edTxtPassword"
+        android:layout_below="@id/edTxtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintPassword"
+        android:inputType="textPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
             />
-    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/txtVwUser"
+        android:layout_below="@id/txtVwEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintUser"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="100dp"
+        android:textSize="20dp"
+        android:ems="10"
+        />
 
     <Button
         android:id="@+id/btnLogin"
@@ -67,6 +82,20 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="100dp"
         android:text="@string/btnLogin"
+        app:icon="@drawable/ic_login" />
+
+    <Button
+        android:id="@+id/btnLogOut"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtVwUser"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="100dp"
+        android:text="@string/btnLogOut"
         app:icon="@drawable/ic_login" />
 
     <Button

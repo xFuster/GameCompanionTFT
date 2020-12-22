@@ -25,10 +25,25 @@
         android:ems="10"
             />
 
+    <EditText
+        android:id="@+id/edTxtUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintUser"
+        android:inputType="text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:layout_below="@id/edTxtEmail"
+        />
+
 
         <EditText
         android:id="@+id/edTxtPassword"
-        android:layout_below="@id/edTxtEmail"
+        android:layout_below="@id/edTxtUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/hintPassword"
@@ -54,5 +69,14 @@
         android:layout_marginEnd="100dp"
         android:text="@string/btnCreateAccount"
         app:icon="@drawable/ic_sign_up" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pgbSignUp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnCreateAccount"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
 
 </RelativeLayout>
