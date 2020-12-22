@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.EditText
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -22,9 +23,8 @@ class RegisterActivity : AppCompatActivity() {
         val registerUser:Button = findViewById(R.id.btnCreateAccount)
         registerUser.setOnClickListener {
             // TODO: Registrar al usuario
-            val email = ""
-            val password = ""
-            val user = ""
+            val email = findViewById<EditText>(R.id.edTxtEmail).text.toString()
+            val password = findViewById<EditText>(R.id.edTxtPassword).text.toString()
             auth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener{
                         if(it.isSuccessful){
