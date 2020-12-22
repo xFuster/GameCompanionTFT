@@ -13,6 +13,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.gamecompanion.R
 import com.example.gamecompanion.RegisterActivity
+import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -36,6 +37,7 @@ class ProfileFragment  : Fragment(){
         initViews(view)
         checkUserAvailable()
         registerButton.setOnClickListener {
+            Firebase.analytics.logEvent("RegisterButtonClicked", null)
             val intent = Intent(activity, RegisterActivity::class.java)
             startActivity(intent)
         }

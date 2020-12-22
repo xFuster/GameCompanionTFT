@@ -103,12 +103,12 @@ class ChatFragment: Fragment(){
 
                             }
                         } else {
-
+                            Toast.makeText(activity, "Error ocurred", Toast.LENGTH_SHORT).show()
                         }
                     }
 
             } ?: kotlin.run {
-
+                Toast.makeText(activity, "Please Log in to Chat", Toast.LENGTH_SHORT).show()
             }
 
         }
