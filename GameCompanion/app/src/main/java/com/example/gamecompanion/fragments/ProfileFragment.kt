@@ -33,7 +33,7 @@ class ProfileFragment  : Fragment(){
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        initViews()
+        initViews(view)
         checkUserAvailable()
         registerButton.setOnClickListener {
             val intent = Intent(activity, RegisterActivity::class.java)
@@ -47,14 +47,14 @@ class ProfileFragment  : Fragment(){
         checkUserAvailable()
     }
 
-    private fun initViews(){
-        registerButton= view!!.findViewById<Button>(R.id.btnGoSignUp)
-        logoutButton = view!!.findViewById<Button>(R.id.btnLogOut)
-        loginButton = view!!.findViewById<Button>(R.id.btnLogin)
-        txtVwEmail = view!!.findViewById<TextView>(R.id.txtVwEmail)
-        txtVwUser = view!!.findViewById<TextView>(R.id.txtVwUser)
-        edTxtEmail = view!!.findViewById<EditText>(R.id.edTxtEmail)
-        edTxtPass = view!!.findViewById<EditText>(R.id.edTxtPassword)
+    private fun initViews(view: View){
+        registerButton= view.findViewById<Button>(R.id.btnGoSignUp)
+        logoutButton = view.findViewById<Button>(R.id.btnLogOut)
+        loginButton = view.findViewById<Button>(R.id.btnLogin)
+        txtVwEmail = view.findViewById<TextView>(R.id.txtVwEmail)
+        txtVwUser = view.findViewById<TextView>(R.id.txtVwUser)
+        edTxtEmail = view.findViewById<EditText>(R.id.edTxtEmail)
+        edTxtPass = view.findViewById<EditText>(R.id.edTxtPassword)
     }
     // Checks if the user is logged in to swap from one view to another
     private fun checkUserAvailable(){
