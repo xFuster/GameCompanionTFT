@@ -4,7 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.FrameLayout
-import android.widget.TextView
+import com.example.gamecompanion.fragments.ChatFragment
+import com.example.gamecompanion.fragments.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -25,7 +26,9 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.chatTab->{
                     val transaction = supportFragmentManager.beginTransaction()
-                    transaction.replace(R.id.fragmentContainer, ChatFragment())
+                    transaction.replace(R.id.fragmentContainer,
+                        ChatFragment()
+                    )
                     transaction.commit()
                 }
                 R.id.streamsTab->{
@@ -36,7 +39,9 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.userTab->{
                     val transaction = supportFragmentManager.beginTransaction()
-                    transaction.replace(R.id.fragmentContainer,ProfileFragment())
+                    transaction.replace(R.id.fragmentContainer,
+                        ProfileFragment()
+                    )
                     transaction.commit()
                 }
 

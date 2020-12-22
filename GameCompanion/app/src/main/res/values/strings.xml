@@ -9,6 +9,11 @@
     <string name="hintPassword">Password</string>
     <string name="btnLogin">Login</string>
     <string name="btnSignUp">Sign Up</string>
-
+    <string name="btnCreateAccount">Create Account</string>
+    <string name="hintUser">User</string>
+    <string name="errorEmail">Email is not valid</string>
+    <string name="errorPassword">Password is not valid</string>
+    <string name="labelRegister">Register</string>
+    <string name="btnLogOut">Log Out</string>
 
 </resources>
