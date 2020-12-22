@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="72dp">
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:layout_margin="8dp"
+    xmlns:tools="http://schemas.android.com/tools">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtViewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Username"
+    />
     <TextView
         android:id="@+id/txtViewMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        tools:text="Message"
     />
-</LinearLayout>
+    <TextView
+        android:id="@+id/txtViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="12:34:10"
+        />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
