@@ -4,7 +4,7 @@
     <string name="tabUser">User</string>
     <string name="tabComps">Comps</string>
     <string name="tabPatch">Patch</string>
-    <string name="tabStreams">Streams</string>
+    <string name="tabStreams">Twitch</string>
     <string name="hintEmail">Email</string>
     <string name="hintPassword">Password</string>
     <string name="btnLogin">Login</string>
@@ -15,5 +15,6 @@
     <string name="errorPassword">Password is not valid</string>
     <string name="labelRegister">Register</string>
     <string name="btnLogOut">Log Out</string>
+    <string name="txtLoginTwitch">Log in with Twitch</string>
 
 </resources>

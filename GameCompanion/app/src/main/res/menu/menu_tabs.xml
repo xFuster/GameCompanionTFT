@@ -8,12 +8,6 @@
         android:icon="@drawable/ic_patch"
         />
     <item
-        android:id="@+id/compsTab"
-        android:title="@string/tabComps"
-        android:enabled="true"
-        android:icon="@drawable/ic_comps"
-        />
-    <item
         android:id="@+id/chatTab"
         android:title="@string/tabChat"
         android:enabled="true"

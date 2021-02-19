@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:id="@+id/cardViewId"
+    card_view:cardBackgroundColor="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleNewId"
+            android:layout_width="350dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/messageNewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="left"
+            android:textSize="29sp"
+            android:paddingHorizontal="30dp"
+            tools:text="Lorem Ipsum." />
+
+        <TextView
+            android:id="@+id/newSentAtDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="right"
+            android:textSize="29sp"
+            android:layout_marginRight="21dp"
+            tools:text="12:34:10, 1/12/20" />
+
+        <TextView
+            android:id="@+id/newSentAtHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="29sp"
+            android:layout_gravity="right"
+            android:layout_marginRight="21dp"
+            android:layout_marginBottom="5dp"
+            tools:text="12:34:10, 1/12/20" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -5,7 +5,9 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.widget.FrameLayout
 import com.example.gamecompanion.fragments.ChatFragment
+import com.example.gamecompanion.fragments.NewsFragment
 import com.example.gamecompanion.fragments.ProfileFragment
+import com.example.gamecompanion.fragments.TwitchFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.ktx.Firebase
@@ -23,10 +25,6 @@ class MainActivity : AppCompatActivity() {
         // Tab selected
         bottomNavView.setOnNavigationItemSelectedListener {menuItem: MenuItem ->
             when(menuItem.itemId){
-                R.id.compsTab->{
-                    // Analytics
-                    Firebase.analytics.logEvent("CompsTabClicked", null)
-                }
                 R.id.chatTab->{
                     // Analytics
                     Firebase.analytics.logEvent("ChatTabClicked", null)
@@ -39,10 +37,20 @@ class MainActivity : AppCompatActivity() {
                 R.id.streamsTab->{
                     // Analytics
                     Firebase.analytics.logEvent("StreamsTabClicked", null)
+                    val transaction = supportFragmentManager.beginTransaction()
+                    transaction.replace(R.id.fragmentContainer,
+                            TwitchFragment()
+                    )
+                    transaction.commit()
                 }
                 R.id.patchTab->{
                     // Analytics
                     Firebase.analytics.logEvent("PatchTabClicked", null)
+                    val transaction = supportFragmentManager.beginTransaction()
+                    transaction.replace(R.id.fragmentContainer,
+                            NewsFragment()
+                    )
+                    transaction.commit()
                 }
                 R.id.userTab->{
                     // Analytics
